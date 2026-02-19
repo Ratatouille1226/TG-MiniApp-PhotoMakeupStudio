@@ -1,19 +1,24 @@
+import { Routes, Route } from "react-router";
 import styles from "./app.module.css";
 import Footer from "./components/footer/Footer";
+import { Home, AboutStudio, Masters, ServicesStudio, Works } from "./pages";
 
 function App() {
   return (
     <div className={styles.app}>
       <div className={styles.container}>
-        <header className={styles.header}>
+        {/* <header className={styles.header}>
           <h2>Hello World</h2>
-        </header>
+        </header> */}
 
         <main className={styles.content}>
-          {/* длинный контент */}
-          {Array.from({ length: 50 }).map((_, i) => (
-            <p key={i}>Контент с прокруткой {i + 1}</p>
-          ))}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services-studio" element={<ServicesStudio />} />
+            <Route path="/works" element={<Works />} />
+            <Route path="/masters" element={<Masters />} />
+            <Route path="/about-studio" element={<AboutStudio />} />
+          </Routes>
         </main>
       </div>
 

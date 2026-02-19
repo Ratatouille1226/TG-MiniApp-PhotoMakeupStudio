@@ -1,28 +1,33 @@
 .footer {
-  position: fixed; /* прикрепляем к экрану */
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 500px; /* соответствует контейнеру */
-  padding: 8px;
-  border-top: 1px solid #eee;
-  background: white;
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 30px;
+  background: #1d1d1dc4;
+  box-shadow: 0px 30px 50px 20px rgb(0, 0, 0);
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
   padding-bottom: calc(8px + env(safe-area-inset-bottom));
-  z-index: 10; /* чтобы футер был поверх контента */
+  z-index: 10;
 }
 
-.primaryBtn {
-  flex: 1;
-  margin: 0 4px;
-  height: 48px;
-  border: none;
-  border-radius: 12px;
-  background: #0088cc;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+.navItem {
+  font-size: 26px;
+  color: #aaa;
+  text-decoration: none; /* убирает underline у ссылки */
+  transition: 0.2s;
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  color: #fff201;
+  transform: translateY(-6px);
 }
