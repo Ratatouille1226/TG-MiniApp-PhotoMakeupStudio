@@ -1,0 +1,30 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  position: relative;
+}
+
+/* Контейнер контента */
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  flex: 1;
+  overflow-y: auto; /* скролл для контента */
+  background: white;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Content */
+/* .content { */
+  /* flex: 1 внутри контейнера не нужен, скролл управляется контейнером */
+/* } */
