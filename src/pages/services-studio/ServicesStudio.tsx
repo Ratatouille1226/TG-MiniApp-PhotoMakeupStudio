@@ -1,3 +1,9 @@
+import styles from "./servicesStudio.module.css";
+
 export const ServicesStudio = () => {
-  return <h2>Услуги</h2>;
+  return (
+    <div className={styles.content}>
+      <span>Дратути</span>
+    </div>
+  );
 };

@@ -1,0 +1,65 @@
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  padding-bottom: calc(90px + env(safe-area-inset-bottom)); /* место под footer */
+
+  background: linear-gradient(135deg, #1a1a1a, #2b1d2f, #1a1a1a);
+}
+
+/* карточка */
+.content {
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  padding: 40px 28px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+}
+
+.about span {
+  font-size: 16px;
+  color: #d1d1d1;
+  line-height: 1.4;
+}
+
+.button {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #ff7ac6, #ff4d9d);
+  color: white;
+  cursor: pointer;
+
+  transition: 0.2s;
+  box-shadow: 0 10px 25px rgba(255, 77, 157, 0.4);
+}
+
+.button:active {
+  transform: scale(0.97);
+}

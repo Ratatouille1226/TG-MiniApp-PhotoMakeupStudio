@@ -1,30 +1,27 @@
 .app {
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+
   background: #161616;
-  position: relative;
 }
 
-/* Контейнер контента */
+/* Центральная мобильная колонка */
 .container {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
   flex: 1;
-  overflow-y: auto; /* скролл для контента */
-  background: #2E2E2E;
-  padding: 16px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 500px; /* эмуляция телефона */
+  margin: 0 auto;
+
+  background: #2e2e2e;
 }
 
-/* Header */
-.header {
-  margin-bottom: 16px;
-  font-weight: 600;
-}
+/* main растягивается */
+.content {
+  flex: 1;
+  display: flex;
 
-/* Content */
-/* .content { */
-  /* flex: 1 внутри контейнера не нужен, скролл управляется контейнером */
-/* } */
+}

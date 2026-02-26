@@ -1,7 +1,6 @@
-import { Routes, Route } from "react-router";
 import styles from "./app.module.css";
 import Footer from "./components/footer/Footer";
-import { Home, AboutStudio, Masters, ServicesStudio, Works } from "./pages";
+import AnimatedRoutes from "./components/animated-routes/AnimatedRoutes";
 
 function App() {
   return (
@@ -12,13 +11,7 @@ function App() {
         </header> */}
 
         <main className={styles.content}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services-studio" element={<ServicesStudio />} />
-            <Route path="/works" element={<Works />} />
-            <Route path="/masters" element={<Masters />} />
-            <Route path="/about-studio" element={<AboutStudio />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
       </div>
 

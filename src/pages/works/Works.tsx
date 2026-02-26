@@ -1,3 +1,9 @@
+import styles from "./works.module.css";
+
 export const Works = () => {
-  return <h2>Работы</h2>;
+  return (
+    <div className={styles.content}>
+      <span>Дратути</span>
+    </div>
+  );
 };

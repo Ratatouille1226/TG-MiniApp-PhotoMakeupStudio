@@ -1,3 +1,9 @@
+import styles from "./aboutStudio.module.css";
+
 export const AboutStudio = () => {
-  return <h2>О студии</h2>;
+  return (
+    <div className={styles.content}>
+      <span>Дратути</span>
+    </div>
+  );
 };
